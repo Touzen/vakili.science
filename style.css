@@ -270,11 +270,9 @@ section#hero {
         font-size: 32px;
     }
 
-    div#hero {
-        text-align: initial;
+    h1.section-title {
+        font-size: 40px;
+        margin-bottom: 30px;
     }
 
-    p {
-        font-size: 20px;
-    }
 }
