@@ -159,7 +159,14 @@ div#hero {
     flex-direction: row;
     align-items: center;
     width: 70%;
+}
+
+p {
     text-align: justify;
+}
+
+#publications p {
+    text-align: initial;
 }
 
 #hero img {
