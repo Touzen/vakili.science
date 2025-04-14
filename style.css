@@ -158,7 +158,8 @@ div#hero {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
+    width: 70%;
+    text-align: justify;
 }
 
 #hero img {
@@ -184,7 +185,7 @@ section#hero {
     margin-left: auto;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     h1.title {
         margin-top: 0;
     }
@@ -193,7 +194,7 @@ section#hero {
         display: none;
     }
 
-    header nav {
+    header nav, div#hero {
         width: 80%;
     }
 
@@ -257,5 +258,13 @@ section#hero {
 
     h1.title {
         font-size: 32px;
+    }
+
+    div#hero {
+        text-align: initial;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
