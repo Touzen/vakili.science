@@ -164,7 +164,8 @@ div#hero {
 
 #hero img {
     max-height: 300px;
-    margin-right: 5em;
+    margin-left: 5em;
+    border-radius: 50%;
 }
 
 section#links {
@@ -223,11 +224,13 @@ section#hero {
     }
 
     #hero img {
-        margin-right: 0;
+        margin-left: 0;
+        order: 1;
     }
 
     #hero #introduction {
         margin-left: 0;
+        order: 2;
     }
 
     section {
