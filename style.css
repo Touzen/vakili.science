@@ -164,6 +164,7 @@ div#hero {
 #hero img {
     max-height: 300px;
     margin-right: 5em;
+    border-radius: 50%;
 }
 
 section#links {
