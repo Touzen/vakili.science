@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" href="../favicon.ico">
+        <title>Thomas Vakili - PhD student at Stockholm University</title>
+        <meta name="viewport" content="width=550" />
+        <style>
+            p.links {
+                font-style: italic;
+            }
+
+            p.links a, li a {
+                font-weight: bolder;
+            }
+
+            ol#thesis-papers {
+                list-style-type: upper-roman;
+            }
+
+            li {
+                padding-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="home">
+            <div id="title">
+                <a href="../index.html#top">
+                <h1 class="title">
+                    Thomas Vakili
+                </h1>
+                <p id="byline">PhD student at Stockholm University</p>
+                </a>
+            </div>
+            <nav>
+            <ol>
+                <li><a href="../index.html#publications">Publications</a></li>
+                <li><a href="../index.html#teaching">Teaching</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ol>
+            </nav>
+        </header>
+        <section>
+            <h1 class="section-title"><span>Preserving the Privacy of Clinical Language Models</span></h1>
+            <p class="links">You can find the predoc version of the thesis <a target="_blank" href="../documents/thesis-predoc.pdf">here.</a></p>
+            <h2>Abstract</h2>
+            <p>
+                The state-of-the-art methods in natural language processing (NLP) increasingly rely on large pre-trained transformer models. The strength of the models stems from their large number of parameters and the enormous amounts of data used to train them. The datasets are of a scale that makes it difficult, if not impossible, to audit them manually. When unwieldy amounts of potentially sensitive data are used to train large machine learning models, a difficult problem arises: unintended memorization of the training data.
+            </p>
+            <p>
+                All datasets&mdash;including those based on publicly available data&mdash;can contain personally identifiable information (PII). When models memorize these sensitive data, they become vulnerable to privacy attacks. Very few datasets for NLP can be guaranteed to be free from sensitive data. Consequently, most NLP models are susceptible to privacy leakage. This susceptibility is especially concerning in clinical NLP, where the data typically consist of electronic health records (EHRs). Leaking data from EHRs is never acceptable from a privacy perspective. This doctoral thesis investigates the privacy risks of using sensitive data and how they can be mitigated&mdash;while maintaining data utility.
+            </p>
+            <p>
+                A BERT model pre-trained using clinical data is subjected to a training data extraction attack. The same model is used to evaluate a membership inference attack that has been proposed to quantify the privacy risks of masked language models. Multiple experiments assess the performance gains from adapting pre-trained models to the clinical domain. Then, the impact of automatic de-identification on the performance of BERT models is evaluated for both pre-training and fine-tuning data. Finally, synthetic corpora for training models to detect PII are generated using domain-adapted generative language models. The quality of these corpora, and the parameters affecting their utility, are explored by training and evaluating BERT models.
+            </p>
+            <p>
+                The results show that domain adaptation leads to significantly better performance on clinical NLP tasks. They also show that extracting training data from BERT models is difficult and suggest that the risks can be further decreased by automatically de-identifying the training data. Automatic de-identification is found to preserve the utility of the data used for pre-training and fine-tuning BERT models. However, we also find that contemporary membership inference attacks are unable to quantify the privacy benefits this technique. Similarly, high-quality synthetic corpora can be generated using limited resources, but further research is needed to determine the privacy gains from using them. The results show that automatic de-identification and training data synthesis reduces the privacy risks of using sensitive data for NLP while preserving the utility of the data, but that these privacy benefits may be difficult to quantify.
+            </p> 
+            
+            <h2>Papers</h2>
+            <p>
+                This compilation thesis is based on the following six papers:
+            </p>
+            <ol id="thesis-papers">
+                <li>
+                    <a target="_blank" href="http://ceur-ws.org/Vol-3068/short1.pdf">Thomas Vakili and Hercules Dalianis. 2021.</a> Are Clinical BERT Models Privacy Preserving? The Difficulty of Extracting Patient-Condition Associations. In <i>Proceedings of the AAAI 2021 Fall Symposium on Human Partnership with Medical AI: Design, Operationalization, and Ethics (AAAI-HUMAN 2021).</i>
+                </li>
+                <li>
+                    <a target="_blank" href="https://aclanthology.org/2023.nodalida-1.33/">Thomas Vakili and Hercules Dalianis. 2023.</a> Using Membership Inference Attacks to Evaluate Privacy-Preserving Language Modeling Fails for Pseudonymizing Data. In <i>Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa).</i>
+                </li>
+                <li>
+                    <a target="_blank" href="https://aclanthology.org/2025.nodalida-1.76/">Thomas Vakili, Martin Hansson, and Aron Henriksson. 2025.</a> SweClinEval: A Benchmark for Swedish Clinical Natural Language Processing In <i>Proceedings of the 25th Nordic Conference on Computational Linguistics (NoDaLiDa).</i>
+                </li>
+                <li>
+                    <a target="_blank" href="https://aclanthology.org/2022.lrec-1.451/">Thomas Vakili, Anastasios Lamproudis, Aron Henriksson, and Hercules Dalianis. 2022.</a> Downstream Task Performance of BERT Models Pre-Trained Using Automatically De-Identified Clinical Data. In <i>Proceedings of the 13th Conference on Language Resources and Evaluation.</i>
+                </li>
+                <li>
+                    <a target="_blank" href="https://link.springer.com/article/10.1186/s12911-024-02546-8">Thomas Vakili, Aron Henriksson, and Hercules Dalianis. 2024.</a> End-to-end pseudonymization of fine-tuned clinical BERT models. <i>BMC Medical Informatics and Decision Making</i>, 24(1):162.
+                </li>
+                <li>
+                    <a target="_blank" href="https://arxiv.org/abs/2502.14677">Thomas Vakili, Aron Henriksson, and Hercules Dalianis. 2025.</a> Data-Constrained Synthesis of Training Data for De-Identification. To appear in <i>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers).</i>
+                </li>
+            </ol>
+        </section>
+        <section id="links">
+            <a target="_blank" href="https://www.linkedin.com/in/thomasvakili/">
+            <img src="../images/linkedin.png" alt="LinkedIn logo" />
+            </a>
+            <a target="_blank" href="https://github.com/Touzen">
+            <img src="../images/github.png" alt="GitHub mark" />
+            </a>
+            <a href="mailto:thomas.vakili@dsv.su.se">
+            <img src="../images/email.svg" alt="Email icon" />
+            </a>
+        </section>
+    </body>
+</html>
