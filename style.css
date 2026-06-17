@@ -271,12 +271,16 @@ section#hero {
         --body-text-size: 17px;
     }
 
+    nav ol li {
+        font-size: var(--body-text-size);
+    }
+
     header {
-        height: 80px;
+        height: 100px;
     }
 
     header + * {
-        margin-top: 100px;
+        margin-top: 110px;
     }
 
     h2.section-title {
