@@ -1,4 +1,5 @@
 module.exports = async function(eleventyConfig) {
+    eleventyConfig.ignores.add("temp-daisy-dump.html");
     eleventyConfig.addPassthroughCopy('style.css');
     eleventyConfig.addPassthroughCopy('images');
     eleventyConfig.addPassthroughCopy('documents');

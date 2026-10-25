@@ -47,20 +47,27 @@ h1.section-title {
 
 table {
     border-collapse: collapse;
-    text-align: center;
     font-size: calc(0.9 * var(--body-text-size));
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 1.5em auto;
 }
 
 th {
     border-bottom: 2px solid var(--accent-color);
     border-top: 2px solid var(--accent-color);
     padding: 10px;
+    text-align: left;
 }
 
 td {
     padding: 10px;
+    text-align: left;
+}
+
+th:first-child,
+td:first-child {
+    text-align: center;
+    width: 12%;
 }
 
 tr:nth-child(odd) {

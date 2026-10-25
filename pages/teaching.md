@@ -31,8 +31,6 @@ I have been involved in the MAID course since 2025. My contribution is an introd
     <li> Lecturer </li>
 </ul>
 
-
-
 ## Selected Course Materials
 Here is a selection of course material I have created over the years.
 
@@ -40,11 +38,41 @@ Here is a selection of course material I have created over the years.
 | Course | Type | Title | Materials |
 |---|---|---|---|
 | NLP | Lecture | Classification in NLP| [slides](/documents/slides/nlp-classification.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=8639ebdf-c4dc-489d-9045-763211fd71da&l=7625) |
-| NLP | Lecture | Deep Learning| [slides](/documents/slides/deeplearning.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=b2c18b40-3a55-4ea2-916c-2343529a3bc9&l=7625) |
+| NLP | Lecture | Deep Learning| [slides](/documents/slides/nlp-deeplearning.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=b2c18b40-3a55-4ea2-916c-2343529a3bc9&l=7625) |
 | ISBI | Lecture | Opinion Mining and Sentiment Analysis| [slides](/documents/slides/isbi-opinionmining.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=f3148852-71d9-4f60-9aa6-2f084603b613&l=7396) |
 | ISBI | Lecture | NLP for information retrieval| [slides](/documents/slides/isbi-nlp.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=1c723a47-c1a5-4bbf-88dd-e6f3f362ba51&l=7396) |
 | MAID | Lecture | Machine Learning and Deep Learning| [slides](/documents/slides/maid-deeplearning.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=bc03298d-49d9-40fa-b4b0-90705fa32e27&l=7581) |
-----
+---
 
 # Supervision
-As of 2026, I've supervised 
+As of 2026, I've supervised 16 master theses and three bachelor theses. These theses have explored a wide range of ML and NLP topics, from gender bias detecting in LLMs, through privacy-preserving methods for NLP, to NLP-based analysis of Polish rap lyrics.
+
+| Year | Title | Student(s) |
+|---|---|---|
+| 2026 | Bars from the Blocks: Computational Discourse Analysis of Polish Rap (1994–2026) | Zuzanna Anna Chodorowska |
+| 2026 | Anonymization of hierarchical telecommunication data | Soeren Christopher Raymond |
+| 2026 | Requirement-level compliance assessment in QA workflows: A retrieval-augmented and evidence-audited LLM prototype | Tatiana Mikhailova |
+| 2026 | Multimodal Emotion Monitoring under Data Sparsity: Feasibility of Integrating Continuous Wearable Signals with Intermittent Speech | Yixuan Li |
+| 2026 | Explainable and Data-driven AI-Methods for Predictive Maintenance | Monir Hasani, Helin Sayed Youssef |
+| 2026 | Prompt Language as a Bias Modulator | Tianhua Chen |
+| 2025 | From Prompt to ICD-10: Evaluating Prompt-Based Decoder Large Language Models for ICD-10 Coding Using a Swedish Clinical Dataset | Diana Amin, Katarina Karlin |
+| 2025 | Evaluating LLMs for Gender Bias in Chinese Language: A Comparison of Multilingual and Chinese-based Models | Donghui Lyu, Liangliang Ma |
+| 2025 | Evaluating LLMs for Bias in Non-English Languages - A Persian Perspective | Mohammad Soroush Bagheri |
+| 2025 | NLP Slang Time Machine: Enhancing Model Accuracy for Slang Integration | Emilio Estevez Gustavsson, Adrian Höglund |
+| 2024 | Subword segmentation in highly compounding and morphologically complex languages | Maximilian Törnqvist |
+| 2024 | Assessing a Swedish Automatic Speech Recognition Model for Finland Swedish | Amanda Gisslén, Jessica Machutta Widengren |
+| 2024 | Enhancing the debugging procedure of Petrel Software (SLB) using call stacks | Elza Cherian |
+| 2024 | In-Vehicle Privacy Using AI | Iyad Al Khatib |
+| 2023 | Towards Building Privacy-Preserving Language Models: Challenges and Insights in Adapting PrivGAN for Generation of Synthetic Clinical Text | Atena Nazem |
+| 2023 | Mapping adverse drug reactions to patient-reported symptoms using NLP | Heaven Gebremeskel Weldeslasie |
+| 2022 | Evaluation of Post Hoc XAI Models in Explaining Automatic ICD-10 Classifications of Swedish Discharge Summaries | Hjalmar Davidsen, Alexander Dolk |
+| 2022 | Bias in De-identification Systems | Xiaoman Tang |
+
+### Ongoing Supervision
+| Started | Title | Student(s) |
+|---|---|---|
+| 2025 | Detektion av trafikrelaterad information i strömmande text: Ett experiment med PLM:er | Aksel Forsberg, Anton Karlström |
+| 2024 | Automatic De-Identification of Spoken Audio | Rabia Fazal |
+| 2023 | Grammar/ Spell/ Clitics Error Detection and Correction in the Turkish language | Gurkan Colak |
+
+Are you a student with a thesis idea? Contact me!
