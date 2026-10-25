@@ -211,6 +211,11 @@ section {
     margin-top: 1em;
 }
 
+main:not(#landing) section,
+main:not(#landing) article {
+    width: 100%;
+}
+
 section#introduction {
     width: 75%;
     margin: 0;
