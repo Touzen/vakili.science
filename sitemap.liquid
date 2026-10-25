@@ -1,0 +1,36 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in collections.post | reverse %}
+       {% if not page.data.draft %}
+        <url>
+            <loc>{{ site.url }}{{ page.url | url }}</loc>
+            <changefreq>{{ page.data.changefreq if page.data.changefreq else "monthly" }}</changefreq>
+            <description>{{ page.content | strip_html | truncatewords: 50 }}</description>
+        </url>
+        {% endif %}
+    {% endfor %}
+    <url>
+        <loc>{{ site.url }}/</loc>
+        <changefreq>monthly</changefreq>
+        <description>I'm Thomas Vakili, NLP researcher and university teacher.</description>
+    </url>
+    <url>
+        <loc>{{ site.url }}/publications/</loc>
+        <changefreq>monthly</changefreq>
+        <description>This page lists my publications.</description>
+    </url>
+    <url>
+        <loc>{{ site.url }}/posts/</loc>
+        <changefreq>monthly</changefreq>
+        <description>This page lists research notes and summaries.</description>
+    </url>
+    <url>
+        <loc>{{ site.url }}/teaching/</loc>
+        <changefreq>monthly</changefreq>
+        <description>This page describes my teaching in courses and in supervision.</description>
+    </url>
+</urlset>

@@ -1,0 +1,43 @@
+---
+layout: default
+tags: post
+title: "Is Your LLM a Privacy Risk? (Dokfest 2024)"
+date: 2024-04-25
+---
+<section class="dokfest">
+    <h1 class="section-title"><span>Is Your LLM a Privacy Risk?</span></h1>
+    <p>
+        In my poster presentation, I have described the privacy risks of large language models (LLMs).
+        In short, LLMs have proved to be very successful in many natural language processing (NLP) tasks. However,
+        their capabilities are driven by enormous amounts of parameters being tuned using huge datasets. These
+        factors, in combination with their tendency to memorize details about their training data, lead to
+        <em>real privacy risks.</em> For example, Nasr et al. (2023) estimate that modern LLMs may be at risk of
+        leaking <em>gigabytes</em> of data.
+    </p>
+    <p><img src="/images/pseudonymization.png" alt="Pseudonymization diagram" /></p>
+    <p>
+        There are multiple ways of reducing the privacy risks of LLMs. Each <em>privacy-preserving technique</em>
+        comes with benefits and drawbacks. Our research suggests that <em>automatic pseudonymization</em> of training
+        data reduces privacy risks without harming the utility of the data for training NLP models. Automatic
+        pseudonymization is an <em>intuitive, well-studied, and efficient technique</em> for reducing privacy risks.
+    </p>
+    <p>
+        Here are a few interesting resources related to this presentation:
+        <ul>
+            <li><a href="https://arxiv.org/abs/2311.17035">Nasr et al. (2023)</a>, showing that LLM systems such as
+                ChatGPT can potentially leak gigabytes of training data.</li>
+            <li><a href="https://aclanthology.org/2022.bionlp-1.38">Vakili &amp; Dalianis (2022)</a>, where we show that
+                automatic pseudonymization preserves data utility for fine-tuning clinical BERT models.</li>
+            <li><a href="https://aclanthology.org/2022.lrec-1.451/">Vakili et al. (2022)</a>, where we show that
+                automatic pseudonymization preserves data utility for pre-training clinical BERT models.</li>
+            <li><a href="https://www.researchsquare.com/article/rs-3302707/latest">Vakili et al. (2023)</a>, where we show that
+                automatic pseudonymization preserves data utility for end-to-end training of clinical BERT models.</li>
+            <li><a href="https://urn.kb.se/resolve?urn=urn:nbn:se:su:diva-216693">Vakili (2023) &mdash; my licentiate
+                thesis</a>, where I have summarized the relevant research in this area and describe my own contributions.</li>
+        </ul>
+    </p>
+    <p>
+        Here is a PDF version of the poster:
+        <a href="/documents/dokfest2024.pdf" target="_blank"><img src="/images/poster-dokfest2024.png" class="poster" alt="Dokfest 2024 poster" /></a>
+    </p>
+</section>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="icon" href="/favicon.ico">
+        <title>{% if title %}{{ title }} - Thomas Vakili{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, a researcher and teacher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}" />
+        <meta property="og:title" content="{% if title %}{{ title }}{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}" />
+        <meta property="og:description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, specializing in privacy-preserving NLP.{% endif %}" />
+        <meta property="og:type" content="{% if tags and tags contains 'post' %}article{% else %}website{% endif %}" />
+
+        {% if citation_title %}
+        <meta name="citation_title" content="{{ citation_title }}" />
+        {% endif %}
+        {% if citation_author %}
+        <meta name="citation_author" content="{{ citation_author }}" />
+        {% endif %}
+        {% if citation_publication_date %}
+        <meta name="citation_publication_date" content="{{ citation_publication_date }}" />
+        {% endif %}
+        {% if citation_conference_title %}
+        <meta name="citation_conference_title" content="{{ citation_conference_title }}" />
+        {% endif %}
+        {% if citation_journal_title %}
+        <meta name="citation_journal_title" content="{{ citation_journal_title }}" />
+        {% endif %}
+        {% if citation_pdf_url %}
+        <meta name="citation_pdf_url" content="{{ citation_pdf_url }}" />
+        {% endif %}
+        {% if citation_doi %}
+        <meta name="citation_doi" content="{{ citation_doi }}" />
+        {% endif %}
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "honorificPrefix": "Dr.",
+          "name": "Thomas Vakili",
+          "description": "Dr. Thomas Vakili is a university teacher and researcher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing.",
+          "jobTitle": "Teacher and Researcher",
+          "worksFor": {
+            "@type": "CollegeOrUniversity",
+            "name": "Stockholm University",
+            "department": {
+              "@type": "Organization",
+              "name": "Department of Computer and Systems Sciences (DSV)"
+            }
+          },
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Stockholm University"
+          },
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Stockholm University"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "KTH Royal Institute of Technology"
+            }
+          ],
+          "knowsAbout": [
+            "Large Language Models (LLMs)",
+            "Natural Language Processing (NLP)",
+            "Privacy-Preserving NLP",
+            "Clinical NLP",
+            "Membership Inference Attacks",
+            "Synthetic Data Generation",
+            "De-Identification"
+          ],
+          "image": "https://vakili.science/images/thomas.jpg",
+          "email": "mailto:thomas.vakili@dsv.su.se",
+          "url": "https://vakili.science",
+          "sameAs": [
+            "https://scholar.google.com/citations?user=1aqg-2wAAAAJ",
+            "https://orcid.org/0000-0001-8988-8226",
+            "https://aclanthology.org/people/t/thomas-vakili/",
+            "https://www.linkedin.com/in/thomasvakili/",
+            "https://github.com/Touzen",
+            "https://thomasvakili.se/"
+          ]
+        }
+        </script>
+        <script defer src="https://hej.touzen.net/tjena.js" data-website-id="101f7429-6ab6-4fbf-93c2-069bcaa9d906"></script>
+    </head>
+    <body>
+        <header id="home">
+            <div id="title">
+                <a href="/#top">
+                <span class="title">
+                    Thomas Vakili
+                </span>
+                <p id="byline">Teacher at Stockholm University</p>
+                </a>
+            </div>
+            <nav>
+            <ol>
+                <li><a href="/publications/">Publications</a></li>
+                <li><a href="/posts/">Notes</a></li>
+                <li><a href="/teaching/">Teaching</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ol>
+            </nav>
+        </header>
+        <main {% if tags and tags contains "landing" %}id="landing"{% endif %}>
+            {{ content }}
+        </main>
+        <footer id="links">
+            <a target="_blank" href="https://www.linkedin.com/in/thomasvakili/">
+            <img src="/images/linkedin.png" alt="LinkedIn logo" />
+            </a>
+            <a target="_blank" href="https://github.com/Touzen">
+            <img src="/images/github.png" alt="GitHub mark" />
+            </a>
+            <a href="mailto:thomas.vakili@dsv.su.se">
+            <img src="/images/email.svg" alt="Email icon" />
+            </a>
+        </footer>
+    </body>
+</html>
