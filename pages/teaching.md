@@ -53,19 +53,19 @@ As of 2026, I've supervised 16 master theses and three bachelor theses. These th
 | 2026 | Anonymization of hierarchical telecommunication data | Soeren Christopher Raymond |
 | 2026 | Requirement-level compliance assessment in QA workflows: A retrieval-augmented and evidence-audited LLM prototype | Tatiana Mikhailova |
 | 2026 | Multimodal Emotion Monitoring under Data Sparsity: Feasibility of Integrating Continuous Wearable Signals with Intermittent Speech | Yixuan Li |
-| 2026 | Explainable and Data-driven AI-Methods for Predictive Maintenance | Monir Hasani, Helin Sayed Youssef |
+| 2026 | Explainable and Data-driven AI-Methods for Predictive Maintenance | Monir Hasani & Helin Sayed Youssef |
 | 2026 | Prompt Language as a Bias Modulator | Tianhua Chen |
-| 2025 | From Prompt to ICD-10: Evaluating Prompt-Based Decoder Large Language Models for ICD-10 Coding Using a Swedish Clinical Dataset | Diana Amin, Katarina Karlin |
-| 2025 | Evaluating LLMs for Gender Bias in Chinese Language: A Comparison of Multilingual and Chinese-based Models | Donghui Lyu, Liangliang Ma |
+| 2025 | [From Prompt to ICD-10: Evaluating Prompt-Based Decoder Large Language Models for ICD-10 Coding Using a Swedish Clinical Dataset](https://su.diva-portal.org/smash/record.jsf?pid=diva2:1959279) | Diana Amin & Katarina Karlin |
+| 2025 | Evaluating LLMs for Gender Bias in Chinese Language: A Comparison of Multilingual and Chinese-based Models | Donghui Lyu & Liangliang Ma |
 | 2025 | Evaluating LLMs for Bias in Non-English Languages - A Persian Perspective | Mohammad Soroush Bagheri |
-| 2025 | NLP Slang Time Machine: Enhancing Model Accuracy for Slang Integration | Emilio Estevez Gustavsson, Adrian Höglund |
-| 2024 | Subword segmentation in highly compounding and morphologically complex languages | Maximilian Törnqvist |
-| 2024 | Assessing a Swedish Automatic Speech Recognition Model for Finland Swedish | Amanda Gisslén, Jessica Machutta Widengren |
+| 2025 | NLP Slang Time Machine: Enhancing Model Accuracy for Slang Integration | Emilio Estevez Gustavsson & Adrian Höglund |
+| 2024 | [Subword segmentation in highly compounding and morphologically complex languages](https://www.diva-portal.org/smash/record.jsf?pid=diva2:1955751) | Maximilian Törnqvist |
+| 2024 | [Assessing a Swedish Automatic Speech Recognition Model for Finland Swedish](https://www.diva-portal.org/smash/record.jsf?pid=diva2:1955543) | Amanda Gisslén & Jessica Machutta Widengren |
 | 2024 | Enhancing the debugging procedure of Petrel Software (SLB) using call stacks | Elza Cherian |
 | 2024 | In-Vehicle Privacy Using AI | Iyad Al Khatib |
-| 2023 | Towards Building Privacy-Preserving Language Models: Challenges and Insights in Adapting PrivGAN for Generation of Synthetic Clinical Text | Atena Nazem |
+| 2023 | [Towards Building Privacy-Preserving Language Models: Challenges and Insights in Adapting PrivGAN for Generation of Synthetic Clinical Text](https://www.diva-portal.org/smash/record.jsf?pid=diva2:1814152) | Atena Nazem |
 | 2023 | Mapping adverse drug reactions to patient-reported symptoms using NLP | Heaven Gebremeskel Weldeslasie |
-| 2022 | Evaluation of Post Hoc XAI Models in Explaining Automatic ICD-10 Classifications of Swedish Discharge Summaries | Hjalmar Davidsen, Alexander Dolk |
+| 2022 | Evaluation of Post Hoc XAI Models in Explaining Automatic ICD-10 Classifications of Swedish Discharge Summaries | Hjalmar Davidsen & Alexander Dolk |
 | 2022 | Bias in De-identification Systems | Xiaoman Tang |
 
 Are you a student with a thesis idea? Contact me!
