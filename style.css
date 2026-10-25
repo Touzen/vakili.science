@@ -196,7 +196,7 @@ body {
 }
 
 main {
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
@@ -207,13 +207,18 @@ main#landing {
 }
 
 section {
-    width: 50%;
+    width: 65%;
     margin-top: 1em;
 }
 
 main:not(#landing) section,
 main:not(#landing) article {
     width: 100%;
+}
+
+article.post-preview {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 section#introduction {
