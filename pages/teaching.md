@@ -68,11 +68,4 @@ As of 2026, I've supervised 16 master theses and three bachelor theses. These th
 | 2022 | Evaluation of Post Hoc XAI Models in Explaining Automatic ICD-10 Classifications of Swedish Discharge Summaries | Hjalmar Davidsen, Alexander Dolk |
 | 2022 | Bias in De-identification Systems | Xiaoman Tang |
 
-### Ongoing Supervision
-| Started | Title | Student(s) |
-|---|---|---|
-| 2025 | Detektion av trafikrelaterad information i strömmande text: Ett experiment med PLM:er | Aksel Forsberg, Anton Karlström |
-| 2024 | Automatic De-Identification of Spoken Audio | Rabia Fazal |
-| 2023 | Grammar/ Spell/ Clitics Error Detection and Correction in the Turkish language | Gurkan Colak |
-
 Are you a student with a thesis idea? Contact me!
