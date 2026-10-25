@@ -51,9 +51,9 @@ As of 2026, I've supervised 16 master theses and three bachelor theses. These th
 |---|---|---|
 | 2026 | Bars from the Blocks: Computational Discourse Analysis of Polish Rap (1994–2026) | Zuzanna Anna Chodorowska |
 | 2026 | Anonymization of hierarchical telecommunication data | Soeren Christopher Raymond |
-| 2026 | Requirement-level compliance assessment in QA workflows: A retrieval-augmented and evidence-audited LLM prototype | Tatiana Mikhailova |
+| 2026 | [Requirement-level compliance assessment in QA workflows: A retrieval-augmented and evidence-audited LLM prototype](https://su.diva-portal.org/smash/record.jsf?pid=diva2:2091082) | Tatiana Mikhailova |
 | 2026 | Multimodal Emotion Monitoring under Data Sparsity: Feasibility of Integrating Continuous Wearable Signals with Intermittent Speech | Yixuan Li |
-| 2026 | Explainable and Data-driven AI-Methods for Predictive Maintenance | Monir Hasani & Helin Sayed Youssef |
+| 2026 | [Explainable and Data-driven AI-Methods for Predictive Maintenance](https://su.diva-portal.org/smash/record.jsf?pid=diva2:2082689) | Monir Hasani & Helin Sayed Youssef |
 | 2026 | Prompt Language as a Bias Modulator | Tianhua Chen |
 | 2025 | [From Prompt to ICD-10: Evaluating Prompt-Based Decoder Large Language Models for ICD-10 Coding Using a Swedish Clinical Dataset](https://su.diva-portal.org/smash/record.jsf?pid=diva2:1959279) | Diana Amin & Katarina Karlin |
 | 2025 | Evaluating LLMs for Gender Bias in Chinese Language: A Comparison of Multilingual and Chinese-based Models | Donghui Lyu & Liangliang Ma |
