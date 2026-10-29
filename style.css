@@ -189,8 +189,6 @@ nav a:hover {
 
 nav a.active,
 nav a[aria-current="page"] {
-    color: var(--accent-color);
-    font-weight: 700;
     border-bottom: 3px solid var(--accent-color);
 }
 
@@ -332,6 +330,46 @@ p.section-link {
 
 p img {
     max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+}
+
+section.phdday p em,
+section.dokfest p em {
+    font-weight: bold;
+}
+
+.poster-container {
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+.poster-container a,
+a:has(> img.poster) {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img.poster {
+    display: block;
+    max-width: 60%;
+    width: auto;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poster-container a:hover img.poster,
+a:hover img.poster {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+p:has(img.poster) {
+    text-align: center;
 }
 
 .pub-actions {
@@ -567,6 +605,10 @@ footer#links {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+
+    img.poster {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -593,6 +635,10 @@ footer#links {
     #hero img {
         width: 180px;
         height: 180px;
+    }
+
+    img.poster {
+        max-width: 100%;
     }
 
     .pub-btn,
