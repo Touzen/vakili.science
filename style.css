@@ -390,6 +390,127 @@ p:has(img[src*="poster"]) {
     text-align: center;
 }
 
+/* CV Page Styles */
+.cv-page {
+    width: 100%;
+}
+
+.cv-title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 5px solid var(--accent-color);
+    padding-bottom: 8px;
+    margin: 0.5em 0 1.8em;
+    gap: 1.5rem;
+}
+
+.cv-title-bar .cv-main-title {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    line-height: 1.15;
+}
+
+.cv-download-btn {
+    font-size: calc(0.72 * var(--body-text-size));
+    padding: 0.35em 0.75em;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.cv-download-btn .btn-arrow {
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+h2.cv-section-title {
+    font-size: calc(1.3 * var(--body-text-size));
+    font-weight: 700;
+    margin-top: 2.2em;
+    margin-bottom: 0.9em;
+    border-bottom: 1px solid color-mix(in srgb, var(--text-color), transparent 82%);
+    padding-bottom: 0.35em;
+    color: var(--text-color);
+}
+
+.cv-entry {
+    margin-bottom: 1.4em;
+}
+
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+.cv-title {
+    font-family: 'Merriweather', serif;
+    font-size: calc(1.02 * var(--body-text-size));
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.35;
+    color: var(--text-color);
+}
+
+.cv-date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: calc(0.75 * var(--body-text-size));
+    font-weight: 500;
+    color: color-mix(in srgb, var(--text-color), transparent 30%);
+    white-space: nowrap;
+    text-align: right;
+    letter-spacing: 0.02em;
+}
+
+.cv-sub {
+    font-family: 'Lato', sans-serif;
+    font-size: calc(0.85 * var(--body-text-size));
+    color: color-mix(in srgb, var(--text-color), transparent 25%);
+    margin: 0.2em 0 0.4em 0;
+    line-height: 1.4;
+}
+
+.cv-desc {
+    font-family: 'Lato', sans-serif;
+    font-size: calc(0.92 * var(--body-text-size));
+    font-weight: 300;
+    line-height: 1.55;
+    margin: 0.25em 0 0 0;
+    text-align: justify;
+}
+
+.cv-languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.85rem;
+    margin: 1.2em 0 2em;
+}
+
+.cv-lang-card {
+    background-color: color-mix(in srgb, var(--bg-color), black 3%);
+    border: 1px solid color-mix(in srgb, var(--text-color), transparent 85%);
+    border-radius: 6px;
+    padding: 0.65em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-lang-name {
+    font-weight: 600;
+    font-size: calc(0.9 * var(--body-text-size));
+}
+
+.cv-lang-level {
+    color: color-mix(in srgb, var(--text-color), transparent 35%);
+    font-size: calc(0.82 * var(--body-text-size));
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
 .pub-actions {
     display: flex;
     flex-wrap: wrap;
@@ -629,6 +750,27 @@ footer#links {
     img[src*="poster"] {
         max-width: 90%;
     }
+
+    .cv-title-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .cv-header {
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+
+    .cv-date {
+        text-align: left;
+        color: var(--accent-color);
+        font-weight: 600;
+    }
+
+    .cv-languages-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -660,6 +802,10 @@ footer#links {
     img.poster,
     img[src*="poster"] {
         max-width: 100%;
+    }
+
+    .cv-languages-grid {
+        grid-template-columns: 1fr;
     }
 
     .pub-btn,
