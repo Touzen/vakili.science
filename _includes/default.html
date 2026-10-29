@@ -10,6 +10,8 @@
         <meta property="og:title" content="{% if title %}{{ title }}{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}" />
         <meta property="og:description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, specializing in privacy-preserving NLP.{% endif %}" />
         <meta property="og:type" content="{% if tags and tags contains 'post' %}article{% else %}website{% endif %}" />
+        <meta property="og:url" content="https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}" />
+        <link rel="canonical" href="https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}" />
 
         {% if citation_title %}
         <meta name="citation_title" content="{{ citation_title }}" />
@@ -36,52 +38,87 @@
         <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "Person",
-          "honorificPrefix": "Dr.",
-          "name": "Thomas Vakili",
-          "description": "Dr. Thomas Vakili is a university teacher and researcher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing.",
-          "jobTitle": "Teacher and Researcher",
-          "worksFor": {
-            "@type": "CollegeOrUniversity",
-            "name": "Stockholm University",
-            "department": {
-              "@type": "Organization",
-              "name": "Department of Computer and Systems Sciences (DSV)"
-            }
-          },
-          "affiliation": {
-            "@type": "Organization",
-            "name": "Stockholm University"
-          },
-          "alumniOf": [
+          "@graph": [
             {
-              "@type": "CollegeOrUniversity",
-              "name": "Stockholm University"
+              "@type": "Person",
+              "@id": "https://vakili.science/#person",
+              "honorificPrefix": "Dr.",
+              "name": "Thomas Vakili",
+              "givenName": "Thomas",
+              "familyName": "Vakili",
+              "description": "Dr. Thomas Vakili is a university teacher and researcher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing.",
+              "jobTitle": "Teacher and Researcher",
+              "worksFor": {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.su.se/#institution",
+                "name": "Stockholm University",
+                "department": {
+                  "@type": "Organization",
+                  "name": "Department of Computer and Systems Sciences (DSV)"
+                }
+              },
+              "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.su.se/#institution",
+                "name": "Stockholm University"
+              },
+              "alumniOf": [
+                {
+                  "@type": "CollegeOrUniversity",
+                  "name": "Stockholm University"
+                },
+                {
+                  "@type": "CollegeOrUniversity",
+                  "name": "KTH Royal Institute of Technology"
+                }
+              ],
+              "knowsAbout": [
+                "Large Language Models (LLMs)",
+                "Natural Language Processing (NLP)",
+                "Privacy-Preserving NLP",
+                "Clinical NLP",
+                "Membership Inference Attacks",
+                "Synthetic Data Generation",
+                "De-Identification"
+              ],
+              "image": "https://vakili.science/images/thomas.jpg",
+              "email": "mailto:thomas.vakili@dsv.su.se",
+              "url": "https://vakili.science",
+              "sameAs": [
+                "https://scholar.google.com/citations?user=1aqg-2wAAAAJ",
+                "https://orcid.org/0000-0001-8988-8226",
+                "https://aclanthology.org/people/t/thomas-vakili/",
+                "https://www.linkedin.com/in/thomasvakili/",
+                "https://github.com/Touzen",
+                "https://thomasvakili.se/"
+              ]
             },
             {
-              "@type": "CollegeOrUniversity",
-              "name": "KTH Royal Institute of Technology"
+              "@type": "WebSite",
+              "@id": "https://vakili.science/#website",
+              "url": "https://vakili.science",
+              "name": "Thomas Vakili",
+              "description": "Personal academic website of Dr. Thomas Vakili, researcher and teacher at Stockholm University.",
+              "publisher": {
+                "@id": "https://vakili.science/#person"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}#webpage",
+              "url": "https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}",
+              "name": "{% if title %}{{ title }} - Thomas Vakili{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}",
+              "description": "{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, a researcher and teacher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}",
+              "isPartOf": {
+                "@id": "https://vakili.science/#website"
+              },
+              "about": {
+                "@id": "https://vakili.science/#person"
+              },
+              "mainEntity": {
+                "@id": "https://vakili.science/#person"
+              }
             }
-          ],
-          "knowsAbout": [
-            "Large Language Models (LLMs)",
-            "Natural Language Processing (NLP)",
-            "Privacy-Preserving NLP",
-            "Clinical NLP",
-            "Membership Inference Attacks",
-            "Synthetic Data Generation",
-            "De-Identification"
-          ],
-          "image": "https://vakili.science/images/thomas.jpg",
-          "email": "mailto:thomas.vakili@dsv.su.se",
-          "url": "https://vakili.science",
-          "sameAs": [
-            "https://scholar.google.com/citations?user=1aqg-2wAAAAJ",
-            "https://orcid.org/0000-0001-8988-8226",
-            "https://aclanthology.org/people/t/thomas-vakili/",
-            "https://www.linkedin.com/in/thomasvakili/",
-            "https://github.com/Touzen",
-            "https://thomasvakili.se/"
           ]
         }
         </script>
