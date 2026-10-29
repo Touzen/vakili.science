@@ -26,7 +26,6 @@ I have been involved in the MAID course since 2025. My contribution is an introd
 ## Selected Course Materials
 Here is a selection of course material I have created over the years.
 
----
 | Course | Type | Title | Materials |
 |---|---|---|---|
 | NLP | Lecture | Classification in NLP| [slides](/documents/slides/nlp-classification.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=8639ebdf-c4dc-489d-9045-763211fd71da&l=7625) |
@@ -34,7 +33,6 @@ Here is a selection of course material I have created over the years.
 | ISBI | Lecture | Opinion Mining and Sentiment Analysis| [slides](/documents/slides/isbi-opinionmining.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=f3148852-71d9-4f60-9aa6-2f084603b613&l=7396) |
 | ISBI | Lecture | NLP for information retrieval| [slides](/documents/slides/isbi-nlp.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=1c723a47-c1a5-4bbf-88dd-e6f3f362ba51&l=7396) |
 | MAID | Lecture | Machine Learning and Deep Learning| [slides](/documents/slides/maid-deeplearning.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=bc03298d-49d9-40fa-b4b0-90705fa32e27&l=7581) |
----
 
 <h1 class="section-title"><span class="section-title">Supervision</span></h1>
 
