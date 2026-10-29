@@ -1,0 +1,316 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+<section id="publications">
+    <h1 class="section-title"><span class="section-title">Publications</span></h1>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2025.acl-long.1329/">Data-Constrained Synthesis of Training Data for De-Identification</a>
+    </h2>
+    <p class="authors">Thomas Vakili, Aron Henriksson &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2025.acl-long.1329.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="/documents/posters/acl2025.pdf">Poster</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://underline.io/lecture/122598-data-constrained-synthesis-of-training-data-for-de-identification">Recording</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2025.acl-long.1329.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Many sensitive domains — such as the clinical domain — lack widely available datasets due to privacy risks. The increasing generative capabilities of large language models (LLMs) have made synthetic datasets a viable path forward. In this study, we domain-adapt LLMs to the clinical domain and generate synthetic clinical texts that are machine-annotated with tags for personally identifiable information using capable encoder-based NER models. The synthetic corpora are then used to train synthetic NER models. The results show that training NER models using synthetic corpora incurs only a small drop in predictive performance. The limits of this process are investigated in a systematic ablation study — using both Swedish and Spanish data. Our analysis shows that smaller datasets can be sufficient for domain-adapting LLMs for data synthesis. Instead, the effectiveness of this process is almost entirely contingent on the performance of the machine-annotating NER models trained using the original data.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2025.ranlp-1.65/">Instruction-Tuning LLaMA for Synthetic Medical Note Generation in Swedish and English</a>
+    </h2>
+    <p class="authors">Lotta Kiefer, Jesujoba O. Alabi, Thomas Vakili, Hercules Dalianis &amp; Dietrich Klakow</p>
+    <p class="venue">In <em>Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP 2025)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2025.ranlp-1.65.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/uds-lsv/synthetic-ehr-notes">Code</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2025.ranlp-1.65.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>The increasing capabilities of large language models (LLMs) have unlocked transformative potential for medical applications, but privacy constraints limit access to high-quality training data from electronic health records (EHRs). In response, we propose a framework to generate synthetic EHRs by instruction-tuning an LLM using descriptions of diagnosis codes. We show that this framework overcomes problems of prior approaches, such as diversity reduction and medical incoherence, while maintaining strong privacy protections. Utility was measured by training models to predict diagnosis codes for EHRs. Real data still has higher utility, but synthetic data approaches real data results with increasing dataset size. The differences in utility were most likely due to noise in the synthetic data. A user study involving medical professionals confirmed no significant loss in readability or medical coherence compared to the real HRs, even though inter-annotator agreement is low. These findings establish synthetic EHRs as a viable alternative for privacy-preserving and scalable clinical NLP applications. We release our code on GitHub.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2025.nodalida-1.76/">SweClinEval: A Benchmark for Swedish Clinical Natural Language Processing</a>
+    </h2>
+    <p class="authors">Thomas Vakili, Martin Hansson &amp; Aron Henriksson</p>
+    <p class="venue">In <em>Proceedings of the Joint 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies (NoDaLiDa/Baltic-HLT 2025)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2025.nodalida-1.76.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2025.nodalida-1.76.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>The lack of benchmarks in certain domains and for certain languages makes it difficult to track progress regarding the state-of-the-art of NLP in those areas, potentially impeding progress in important, specialized domains. Here, we introduce the first Swedish benchmark for clinical NLP: <em>SweClinEval</em>. The first iteration of the benchmark consists of six clinical NLP tasks, encompassing both document-level classification and named entity recognition tasks, with real clinical data. We evaluate nine different encoder models, both Swedish and multilingual. The results show that domain-adapted models outperform generic models on sequence-level classification tasks, while certain larger generic models outperform the clinical models on named entity recognition tasks. We describe how the benchmark can be managed despite limited possibilities to share sensitive clinical data, and discuss plans for extending the benchmark in future iterations.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://link.springer.com/article/10.1186/s12911-024-02609-w">A Pseudonymized Corpus of Occupational Health Narratives for Clinical Entity Recognition in Spanish</a>
+    </h2>
+    <p class="authors">Jocelyn Dunstan, Thomas Vakili, Luis Miranda, Fabián Villena, Claudio Aracena, Tamara Quiroga, Paulina Vera, Sebastián Viteri Valenzuela &amp; Victor Rocco</p>
+    <p class="venue"><em>BMC Medical Informatics and Decision Making</em> special issue on <em>Health information privacy and security (2024)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://link.springer.com/content/pdf/10.1186/s12911-024-02609-w.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Touzen/achs-pseudonymization">Code</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://citation-needed.springer.com/v2/references/10.1186/s12911-024-02609-w?format=bibtex&amp;flavour=citation">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Despite the high creation cost, annotated corpora are indispensable for robust natural language processing systems. In the clinical field, in addition to annotating medical entities, corpus creators must also remove personally identifiable information (PII). This has become increasingly important in the era of large language models where unwanted memorization can occur. This paper presents a corpus annotated to anonymize personally identifiable information in 1,787 anamneses of work-related accidents and diseases in Spanish. Additionally, we applied a previously released model for Named Entity Recognition (NER) trained on referrals from primary care physicians to identify diseases, body parts, and medications in this work-related text. We analyzed the differences between the models and the gold standard curated by a physician in detail. Moreover, we compared the performance of the NER model on the original narratives, in narratives where personal information has been masked, and in texts where the personal data is replaced by another similar surrogate value (pseudonymization). Within this publication, we share the annotation guidelines and the annotated corpus.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://link.springer.com/article/10.1186/s12911-024-02546-8">End-to-End Pseudonymization of Fine-Tuned Clinical BERT Models</a>
+    </h2>
+    <p class="authors">Thomas Vakili, Aron Henriksson &amp; Hercules Dalianis</p>
+    <p class="venue"><em>BMC Medical Informatics and Decision Making</em> special issue on <em>Health information privacy and security (2024)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://link.springer.com/content/pdf/10.1186/s12911-024-02546-8.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://citation-needed.springer.com/v2/references/10.1186/s12911-024-02546-8?format=bibtex&amp;flavour=citation">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Many state-of-the-art results in natural language processing (NLP) rely on large pre-trained language models (PLMs). These models consist of large amounts of parameters that are tuned using vast amounts of training data. These factors cause the models to memorize parts of their training data, making them vulnerable to various privacy attacks. This is cause for concern, especially when these models are applied in the clinical domain, where data are very sensitive.</p>
+                <p>Training data pseudonymization is a privacy-preserving technique that aims to mitigate these problems. This technique automatically identifies and replaces sensitive entities with realistic but non-sensitive surrogates. Pseudonymization has yielded promising results in previous studies. However, no previous study has applied pseudonymization to both the pre-training data of PLMs and the fine-tuning data used to solve clinical NLP tasks.</p>
+                <p>This study evaluates the effects on the predictive performance of end-to-end pseudonymization of Swedish clinical BERT models fine-tuned for five clinical NLP tasks. A large number of statistical tests are performed, revealing minimal harm to performance when using pseudonymized fine-tuning data. The results also find no deterioration from end-to-end pseudonymization of pre-training and fine-tuning data. These results demonstrate that pseudonymizing training data to reduce privacy risks can be done without harming data utility for training PLMs.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2024.clinicalnlp-1.11/">A Privacy-Preserving Corpus for Occupational Health in Spanish: Evaluation for NER and Classification Tasks</a>
+    </h2>
+    <p class="authors">Claudio Aracena, Luis Miranda, Thomas Vakili, Fabián Villena, Tamara Quiroga, Fredy Núñez-Torres, Victor Rocco &amp; Jocelyn Dunstan</p>
+    <p class="venue">In <em>Proceedings of the 6th Clinical Natural Language Processing Workshop @ NAACL 2024</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2024.clinicalnlp-1.11.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://underline.io/lecture/96554-a-privacy-preserving-corpus-for-occupational-health-in-spanish-evaluation-for-ner-and-classification-tasks">Recording</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2024.clinicalnlp-1.11.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Annotated corpora are essential to reliable natural language processing. While they are expensive to create, they are essential for building and evaluating systems. This study introduces a new corpus of 2,869 medical and admission reports collected by an occupational insurance and health provider. The corpus has been carefully annotated for personally identifiable information (PII) and is shared, masking this information. Two annotators adhered to annotation guidelines during the annotation process, and a referee later resolved annotation conflicts in a consolidation process to build a gold standard subcorpus. The inter-annotator agreement values, measured in F1, range between 0.86 and 0.93 depending on the selected subcorpus. The value of the corpus is demonstrated by evaluating its use for NER of PII and a classification task. The evaluations find that fine-tuned models and GPT-3.5 reach F1 of 0.911 and 0.720 in NER of PII, respectively. In the case of the insurance coverage classification task, using the original or de-identified corpus results in similar performance. The annotated data are released in de-identified form.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2024.caldpseudo-1.9/">When Is a Name Sensitive? Eponyms in Clinical Text and Implications for De-Identification</a>
+    </h2>
+    <p class="authors">Thomas Vakili, Tyr Hullmann, Aron Henriksson &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>Proceedings of the Workshop on Computational Approaches to Language Data Pseudonymization (CALD-pseudo) @ EACL2024</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2024.caldpseudo-1.9.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://underline.io/lecture/95931-when-is-a-name-sensitivequestion-eponyms-in-clinical-text-and-implications-for-de-identification">Recording</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2024.caldpseudo-1.9.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Clinical data, in the form of electronic health records, are rich resources that can be tapped using natural language processing. At the same time, they contain very sensitive information that must be protected. One strategy is to remove or obscure data using automatic de-identification. However, the detection of sensitive data can yield false positives. This is especially true for tokens that are similar in form to sensitive entities, such as eponyms. These names tend to refer to medical procedures or diagnoses rather than specific persons. Previous research has shown that automatic de-identification systems often misclassify eponyms as names, leading to a loss of valuable medical information. In this study, we estimate the prevalence of eponyms in a real Swedish clinical corpus. Furthermore, we demonstrate that modern transformer-based de-identification systems are more accurate in distinguishing between names and eponyms than previous approaches.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785868/">Using a Large Open Clinical Corpus for Improved ICD-10 Diagnosis Coding</a>
+    </h2>
+    <p class="authors">Anastasios Lamproudis, Therese Olsen Svenning, Torbjørn Torsvik, Taridzo Chomutare, Andrius Budrionis, Phuong Dinh Ngo, Thomas Vakili &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>AMIA Annual Symposium Proceedings 2023</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785868/pdf/3673752.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/38222378/">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>With the recent advances in natural language processing and deep learning, the development of tools that can assist medical coders in ICD-10 diagnosis coding and increase their efficiency in coding discharge summaries is significantly more viable than before. To that end, one important component in the development of these models is the datasets used to train them. In this study, such datasets are presented, and it is shown that one of them can be used to develop a BERT-based language model that can consistently perform well in assigning ICD-10 codes to discharge summaries written in Swedish. Most importantly, it can be used in a coding support setup where a tool can recommend potential codes to the coders. This reduces the range of potential codes to consider and, in turn, reduces the workload of the coder. Moreover, the de-identified and pseudonymised dataset is open to use for academic users.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2023.nodalida-1.33/">Using Membership Inference Attacks to Evaluate Privacy-Preserving Language Modeling Fails for Pseudonymizing Data</a>
+    </h2>
+    <p class="authors">Thomas Vakili &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa 2023)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2023.nodalida-1.33.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="/documents/posters/nodalida2023.pdf">Poster</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2023.nodalida-1.33.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Large pre-trained language models dominate the current state-of-the-art for many natural language processing applications, including the field of clinical NLP. Several studies have found that these can be susceptible to privacy attacks that are unacceptable in the clinical domain where personally identifiable information (PII) must not be exposed. However, there is no consensus regarding how to quantify the privacy risks of different models. One prominent suggestion is to quantify these risks using membership inference attacks. In this study, we show that a state-of-the-art membership inference attack on a clinical BERT model fails to detect the privacy benefits from pseudonymizing data. This suggests that such attacks may be inadequate for evaluating token-level privacy preservation of PIIs.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://ecp.ep.liu.se/index.php/shi/article/view/456">Evaluation of LIME and SHAP in Explaining Automatic ICD-10 Classifications of Swedish Gastrointestinal Discharge Summaries</a>
+    </h2>
+    <p class="authors">Alexander Dolk, Hjalmar Davidsen, Hercules Dalianis &amp; Thomas Vakili</p>
+    <p class="venue">In <em>Proceedings of the 18th Scandinavian Conference on Health Informatics (SHI 2022)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://ecp.ep.liu.se/index.php/shi/article/view/456/414">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://ecp.ep.liu.se/index.php/shi/article/view/456">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>A computer-assisted coding tool could alleviate the burden on medical staff to assign ICD diagnosis codes to discharge summaries by utilising deep learning models to generate recommendations. However, the opaque nature of deep learning models makes it hard for humans to trust them. In this study, the explainable AI models LIME and SHAP have been applied to the clinical language model SweDeClin-BERT to explain ICD-10 codes assigned to Swedish gastrointestinal discharge summaries. The explanations have been evaluated by eight medical experts, showing a statistically higher significant difference in explainable performance for SHAP compared to LIME.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2022.lrec-1.451/">Downstream Task Performance of BERT Models Pre-Trained Using Automatically De-Identified Clinical Data</a>
+    </h2>
+    <p class="authors">Thomas Vakili, Anastasios Lamproudis, Aron Henriksson &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>Proceedings of the 13th Conference on Language Resources and Evaluation (LREC 2022)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.lrec-1.451.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="/documents/posters/lrec2022.pdf">Poster</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.lrec-1.451.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Automatic de-identification is a cost-effective and straightforward way of removing large amounts of personally identifiable information from large and sensitive corpora. However, these systems also introduce errors into datasets due to their imperfect precision. These corruptions of the data may negatively impact the utility of the de-identified dataset. This paper de-identifies a very large clinical corpus in Swedish either by removing entire sentences containing sensitive data or by replacing sensitive words with realistic surrogates. These two datasets are used to perform domain adaptation of a general Swedish BERT model. The impact of the de-identification techniques is assessed by training and evaluating the models using six clinical downstream tasks. The results are then compared to a similar BERT model domain-adapted using an unaltered version of the clinical corpus. The results show that using an automatically de-identified corpus for domain adaptation does not negatively impact downstream performance. We argue that automatic de-identification is an efficient way of reducing the privacy risks of domain-adapted models and that the models created in this paper should be safe to distribute to other academic researchers.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2022.legal-1.10/">Cross-Clinic De-Identification of Swedish Electronic Health Records: Nuances and Caveats</a>
+    </h2>
+    <p class="authors">Olle Bridal, Thomas Vakili &amp; Marina Santini</p>
+    <p class="venue">In <em>Proceedings of the Legal and Ethical Issues Workshop @ LREC2022</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.legal-1.10.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.legal-1.10.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Privacy preservation of sensitive information is one of the main concerns in clinical text mining. Due to the inherent privacy risks of handling clinical data, the clinical corpora used to create the clinical Named Entity Recognition (NER) models underlying clinical de-identification systems cannot be shared. This situation implies that clinical NER models are trained and tested on data originating from the same institution since it is rarely possible to evaluate them on data belonging to a different organization. These restrictions on sharing make it very difficult to assess whether a clinical NER model has overfitted the data or if it has learned any undetected biases. This paper presents the results of the first-ever cross-institution evaluation of a Swedish de-identification system on Swedish clinical data. Alongside the encouraging results, we discuss differences and similarities across EHR naming conventions and NER tagsets.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2022.term-1.6/">Evaluating Pre-Trained Language Models for Focused Terminology Extraction from Swedish Medical Records</a>
+    </h2>
+    <p class="authors">Oskar Jerdhaf, Marina Santini, Peter Lundberg, Tomas Bjerner, Yosef Al-Abasse, Arne Jönsson &amp; Thomas Vakili</p>
+    <p class="venue">In <em>Proceedings of the TERM21 Workshop @ LREC 2022</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.term-1.6.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.term-1.6.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>In the experiments briefly presented in this abstract, we compare the performance of a generalist Swedish pre-trained language model with a domain-specific Swedish pre-trained model on the downstream task of focussed terminology extraction of implant terms, which are terms that indicate the presence of implants in the body of patients. The fine-tuning is identical for both models. For the search strategy we rely on KD-Tree that we feed with two different lists of term seeds, one with noise and one without noise. Results shows that the use of a domain-specific pre-trained language model has a positive impact on focussed terminology extraction only when using term seeds without noise.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://aclanthology.org/2022.bionlp-1.38/">Utility Preservation of Clinical Text After De-Identification</a>
+    </h2>
+    <p class="authors">Thomas Vakili &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>Proceedings of the 21st Workshop on Biomedical Language Processing @ ACL 2022</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.bionlp-1.38.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="/documents/posters/bionlp2022.pdf">Poster</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://underline.io/lecture/51424-utility-preservation-of-clinical-text-after-de-identification">Recording</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://aclanthology.org/2022.bionlp-1.38.bib">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Electronic health records contain valuable information about symptoms, diagnosis, treatment and outcomes of the treatments of individual patients. However, the records may also contain information that can reveal the identity of the patients. Removing these identifiers - the Protected Health Information (PHI) - can protect the identity of the patient. Automatic de-identification is a process which employs machine learning techniques to detect and remove PHI. However, automatic techniques are imperfect in their precision and introduce noise into the data. This study examines the impact of this noise on the utility of Swedish de-identified clinical data by using human evaluators and by training and testing BERT models. Our results indicate that de-identification does not harm the utility for clinical NLP and that human evaluators are less sensitive to noise from de-identification than expected.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="http://ceur-ws.org/Vol-3068/short1.pdf">Are Clinical BERT Models Privacy Preserving? The Difficulty of Extracting Patient-Condition Associations</a>
+    </h2>
+    <p class="authors">Thomas Vakili &amp; Hercules Dalianis</p>
+    <p class="venue">In <em>Proceedings of the AAAI 2021 Fall Symposium on Human Partnership with Medical AI: Design, Operationalization, and Ethics (AAAI-HUMAN 2021)</em></p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="/documents/aaai-human.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="http://ceur-ws.org/Vol-3068/short1.pdf">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>Language models may be trained on data that contain personal information, such as clinical data. Such sensitive data must not leak for privacy reasons. This article explores whether BERT models trained on clinical data are susceptible to training data extraction attacks.  Multiple large sets of sentences generated from the model with top-k sampling and nucleus sampling are studied. The sentences are examined to determine the degree to which they contain information associating patients with their conditions. The sentence sets are then compared to determine if there is a correlation between the degree of privacy leaked and the linguistic quality attained by each generation technique.  We find that the relationship between linguistic quality and privacy leakage is weak and that the risk of a successful training data extraction attack on a BERT-based model is small.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://gu-clasp.github.io/resourceful-2020/papers/RESOURCEFUL-2020_paper_4.pdf">A Method for the Assisted Translation of QA Datasets Using Multilingual Sentence Embeddings</a>
+    </h2>
+    <p class="authors">Thomas Vakili</p>
+    <p class="venue">An extended abstract of my <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-281826">master's thesis</a> presented at the 2020 workshop on <em>RESOURCEs and representations For Under-resourced Languages and domains</em>.</p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://gu-clasp.github.io/resourceful-2020/papers/RESOURCEFUL-2020_paper_4.pdf">Paper</a>
+    </div>
+
+    <h1 class="section-title"><span class="section-title">Theses</span></h1>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://www.diva-portal.org/smash/record.jsf?pid=diva2:2017117">Preserving the Privacy of Language Models: Experiments in Clinical NLP</a>
+    </h2>
+    <p class="venue">Doctoral thesis at Stockholm University (2025).</p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="/documents/phdthesis.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://su.diva-portal.org/smash/export.jsf?format=bibtex&addFilename=true&pid=diva2:2017117">BibTeX</a>
+        <details class="pub-abstract">
+            <summary class="pub-btn pub-btn-abstract">Abstract</summary>
+            <blockquote>
+                <p>The state-of-the-art methods in natural language processing (NLP) increasingly rely on large pre-trained transformer models. The strength of the models stems from their large number of parameters and the enormous amounts of data used to train them. The datasets are of a scale that makes it difficult, if not impossible, to audit them manually. When unwieldy amounts of potentially sensitive data are used to train large machine learning models, a difficult problem arises: unintended memorization of the training data.</p>
+                <p>All datasets—including those based on publicly available data—can contain personally identifiable information (PII). When models memorize these sensitive data, they become vulnerable to privacy attacks. Very few datasets for NLP can be guaranteed to be free from sensitive data. Consequently, most NLP models are susceptible to privacy leakage. This susceptibility is especially concerning in clinical NLP, where the data typically consist of electronic health records (EHRs). Leaking data from EHRs is never acceptable from a privacy perspective. This doctoral thesis investigates the privacy risks of using sensitive data and how they can be mitigated—while maintaining data utility.</p>
+                <p>A BERT model pre-trained using clinical data is subjected to a training data extraction attack. The same model is used to evaluate a membership inference attack that has been proposed to quantify the privacy risks of masked language models. Multiple experiments assess the performance gains from adapting pre-trained models to the clinical domain. Then, the impact of automatic de-identification on the performance of BERT models is evaluated for both pre-training and fine-tuning data. Finally, synthetic corpora for training models to detect PII are generated using domain-adapted generative language models. The quality of these corpora, and the parameters affecting their utility, are explored by training and evaluating BERT models.</p>
+                <p>The results show that domain adaptation leads to significantly better performance on clinical NLP tasks. They also show that extracting training data from BERT models is difficult and suggest that the risks can be further decreased by automatically de-identifying the training data. Automatic de-identification is found to preserve the utility of the data used for pre-training and fine-tuning BERT models. However, we also find that contemporary membership inference attacks are unable to quantify the privacy benefits this technique. Similarly, high-quality synthetic corpora can be generated using limited resources, but further research is needed to determine the privacy gains from using them. The results show that automatic de-identification and training data synthesis reduces the privacy risks of using sensitive data for NLP while preserving the utility of the data, but that these privacy benefits may be difficult to quantify.</p>
+            </blockquote>
+        </details>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://su.diva-portal.org/smash/record.jsf?pid=diva2:1752845">Attacking and Defending the Privacy of Clinical Language Models</a>
+    </h2>
+    <p class="venue">Licentiate thesis at Stockholm University (2023).</p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://su.diva-portal.org/smash/get/diva2:1752845/FULLTEXT01.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://su.diva-portal.org/smash/export.jsf?format=bibtex&addFilename=true&pid=diva2:1752845">BibTeX</a>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2:1470283">A Method for the Assisted Translation of QA Datasets Using Multilingual Sentence Embeddings</a>
+    </h2>
+    <p class="venue">Master's thesis at KTH - Royal Institute of Technology (2020).</p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://kth.diva-portal.org/smash/get/diva2:1470283/FULLTEXT01.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://kth.diva-portal.org/smash/export.jsf?format=bibtex&addFilename=true&pid=diva2:1470283">BibTeX</a>
+    </div>
+
+    <h2 class="publication-title">
+        <a target="_blank" href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A927364&dswid=-3460">A Comparison of Clustering the Swedish Political Twittersphere Based on Social Interactions and on Tweet Content</a>
+    </h2>
+    <p class="venue">Bachelor's thesis at KTH - Royal Institute of Technology (2016).</p>
+    <div class="pub-actions">
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://kth.diva-portal.org/smash/get/diva2:927364/FULLTEXT01.pdf">Paper</a>
+        <a class="pub-btn" target="_blank" rel="noopener noreferrer" href="https://kth.diva-portal.org/smash/export.jsf?format=bibtex&addFilename=true&pid=diva2:927364">BibTeX</a>
+    </div>
+</section>

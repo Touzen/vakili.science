@@ -1,0 +1,36 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in collections.post | reverse %}
+       {% if not page.data.draft %}
+        <url>
+            <loc>{{ site.url }}{{ page.url | url }}</loc>
+            <lastmod>{{ page.inputPath | lastmod }}</lastmod>
+            <changefreq>{{ page.data.changefreq | default: "monthly" }}</changefreq>
+        </url>
+        {% endif %}
+    {% endfor %}
+    <url>
+        <loc>{{ site.url }}/</loc>
+        <lastmod>{{ "index.html" | lastmod }}</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>{{ site.url }}/publications/</loc>
+        <lastmod>{{ "pages/publications.html" | lastmod }}</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>{{ site.url }}/teaching/</loc>
+        <lastmod>{{ "pages/teaching.md" | lastmod }}</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>{{ site.url }}/cv/</loc>
+        <lastmod>{{ "pages/cv.html" | lastmod }}</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+</urlset>

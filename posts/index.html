@@ -1,0 +1,21 @@
+---
+layout: default
+title: Notes
+permalink: /posts/
+---
+<section id="posts">
+    <h1 class="section-title"><span class="section-title">Research Notes</span></h1>
+    <div class="posts-list">
+    {% for post in collections.post | reverse %}
+        <article class="post-preview">
+            <h2 class="publication-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            {% if post.data.citation_conference_title %}
+            <p class="venue">{{ post.data.citation_conference_title }}</p>
+            {% elsif post.data.date %}
+            <p class="venue">{{ post.data.date | date: "%B %Y" }}</p>
+            {% endif %}
+            <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
+        </article>
+    {% endfor %}
+    </div>
+</section>
