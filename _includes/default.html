@@ -9,6 +9,7 @@
         <meta name="description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, a researcher and teacher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}" />
         <meta property="og:title" content="{% if title %}{{ title }}{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}" />
         <meta property="og:description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, specializing in privacy-preserving NLP.{% endif %}" />
+        <meta property="og:image" content="https://vakili.science/images/thomas.jpg" />
         <meta property="og:type" content="{% if tags and tags contains 'post' %}article{% else %}website{% endif %}" />
         <meta property="og:url" content="https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}" />
         <link rel="canonical" href="https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}" />
@@ -46,6 +47,7 @@
               "name": "Thomas Vakili",
               "givenName": "Thomas",
               "familyName": "Vakili",
+              "image": "https://vakili.science/images/thomas.jpg",
               "description": "Dr. Thomas Vakili is a university teacher and researcher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing.",
               "jobTitle": "Teacher and Researcher",
               "worksFor": {
