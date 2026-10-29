@@ -8,29 +8,29 @@ eleventyExcludeFromCollections: true
        {% if not page.data.draft %}
         <url>
             <loc>{{ site.url }}{{ page.url | url }}</loc>
-            <changefreq>{{ page.data.changefreq if page.data.changefreq else "monthly" }}</changefreq>
-            <description>{{ page.content | strip_html | truncatewords: 50 }}</description>
+            <lastmod>{{ page.inputPath | lastmod }}</lastmod>
+            <changefreq>{{ page.data.changefreq | default: "monthly" }}</changefreq>
         </url>
         {% endif %}
     {% endfor %}
     <url>
         <loc>{{ site.url }}/</loc>
+        <lastmod>{{ "index.html" | lastmod }}</lastmod>
         <changefreq>monthly</changefreq>
-        <description>I'm Thomas Vakili, NLP researcher and university teacher.</description>
     </url>
     <url>
         <loc>{{ site.url }}/publications/</loc>
+        <lastmod>{{ "pages/publications.html" | lastmod }}</lastmod>
         <changefreq>monthly</changefreq>
-        <description>This page lists my publications.</description>
     </url>
     <url>
         <loc>{{ site.url }}/teaching/</loc>
+        <lastmod>{{ "pages/teaching.md" | lastmod }}</lastmod>
         <changefreq>monthly</changefreq>
-        <description>This page describes my teaching in courses and in supervision.</description>
     </url>
     <url>
         <loc>{{ site.url }}/cv/</loc>
+        <lastmod>{{ "pages/cv.html" | lastmod }}</lastmod>
         <changefreq>monthly</changefreq>
-        <description>Curriculum Vitae of Dr. Thomas Vakili.</description>
     </url>
 </urlset>
