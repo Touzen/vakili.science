@@ -7,29 +7,19 @@ permalink: /teaching/
 Having the opportunity to teach was, and still is a privilege. Indeed, it was an important reason for deciding to pursue a PhD degree. Throughout the years, I have taught many different courses. A selection of these are discussed below.
 
 ## Natural Language --- NLP
+<p class="course-meta"><strong>Roles:</strong> Lecturer, Examiner, Lab supervisor <span class="meta-sep">|</span> DSV, Stockholm University</p>
+
 I have taught the NLP course at DSV since 2022. The course was completely new, and I was part of the team designing it. I helped design the curriculum, several lectures, and also the lab assignments. We are constantly finding ways to improve the course, and I'm proud of the consistently positive feedback we find in our course evaluations.
 
-<ul class="teaching-roles">
-    <li> Lecturer </li>
-    <li> Examiner </li>
-    <li> Lab supervisor </li>
-</ul>
-
 ## Internet Search Techniques and Business Intelligence --- ISBI
+<p class="course-meta"><strong>Roles:</strong> Lecturer, Examiner, Lab supervisor <span class="meta-sep">|</span> DSV, Stockholm University</p>
+
 I have taught parts of the ISBI course since 2022. This course is aimed at bachelor's students at DSV, and focuses on techniques for searching and analyzing information on the internet. The course starts with traditional information retrieval, then introduces core NLP concepts, and ends with an introduction to modern approaches to internet search using large language models.
 
-<ul class="teaching-roles">
-    <li> Lecturer </li>
-    <li> Examiner </li>
-    <li> Lab supervisor </li>
-</ul>
-
 ## Human-AI Interaction --- MAID
-I have been involved in the MAID course since 2025. My contribution is an introductory lecture about machine learning and how modern deep learning approaches work from a technical perspective. The course is taken by bachelor students focused on interaction design, and the lecture provides a technical but accessible overview of how AI actually works.
+<p class="course-meta"><strong>Roles:</strong> Lecturer, Hackathon organizer <span class="meta-sep">|</span> DSV, Stockholm University</p>
 
-<ul class="teaching-roles">
-    <li> Lecturer </li>
-</ul>
+I have been involved in the MAID course since 2025. My contribution is an introductory lecture about machine learning and how modern deep learning approaches work from a technical perspective. The course is taken by bachelor students focused on interaction design, and the lecture provides a technical but accessible overview of how AI actually works.
 
 ## Selected Course Materials
 Here is a selection of course material I have created over the years.

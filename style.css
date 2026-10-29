@@ -28,9 +28,9 @@ h1 {
     font-size: calc(2.3 * var(--body-text-size));
     font-weight: 900;
 
-    margin: 0.5em auto 0;
+    margin: 0.5em 0;
     width: fit-content;
-    text-align: center;
+    text-align: left;
     display: block;
 
     border-bottom: 5px solid var(--accent-color);
@@ -42,7 +42,12 @@ h1 {
 }
 
 h1.section-title {
+    margin: 0.5em 0;
+}
+
+main#landing h1.section-title {
     margin: 0.5em auto;
+    text-align: center;
 }
 
 table {
@@ -98,30 +103,32 @@ ul {
     margin-bottom: 0;
 }
 
-ul.teaching-roles {
-    padding-left: 0;
-    margin: 0 auto;
-    width: fit-content;
+.course-meta {
+    font-size: calc(0.85 * var(--body-text-size));
+    color: color-mix(in srgb, var(--text-color), transparent 25%);
+    margin-top: 0.25em;
+    margin-bottom: 0.8em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
 
-    li {
-        font-style: italic;
-        display: inline-block;
-        margin-right: 1em;
-    }
+.course-meta .meta-label,
+.course-meta strong {
+    font-weight: 700;
+    color: var(--text-color);
+}
 
-    li:not(:first-child)::before {
-        content: "•";
-        padding-right: 1.2em;
-    }
-
-    li:first-child::before {
-        content: "";
-    }
+.course-meta .meta-sep {
+    color: var(--accent-color);
+    margin: 0 0.4em;
+    font-weight: 600;
 }
 
 
 h2+p {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 span.title+#byline {
@@ -171,14 +178,20 @@ nav a {
 }
 
 nav a {
-    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-    text-underline-offset: 0.2em;
-    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 200ms ease;
 }
 
 nav a:hover {
-    text-decoration-color: var(--accent-color);
-    text-underline-offset: 0.4em;
+    border-bottom-color: var(--accent-color);
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    color: var(--accent-color);
+    font-weight: 700;
+    border-bottom: 3px solid var(--accent-color);
 }
 
 h2.publication-title a {
@@ -229,8 +242,17 @@ article.post-preview {
 }
 
 section#introduction {
-    width: 75%;
+    flex: 1 1 auto;
+    width: auto;
     margin: 0;
+}
+
+section#introduction p:first-child {
+    margin-top: 0;
+}
+
+section#introduction p:last-child {
+    margin-bottom: 0;
 }
 
 header {
@@ -261,7 +283,11 @@ div#hero {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 70%;
+    justify-content: space-between;
+    gap: 3.5rem;
+    width: 65%;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 p {
@@ -269,15 +295,22 @@ p {
 }
 
 p.section-link {
-    --border-width: 0.15em;
-
-    border-left: var(--border-width) solid var(--accent-color);
-    margin-left: calc(-1 * var(--border-width));
-    padding-left: 0.5em;
+    border-left: 4px solid var(--accent-color);
+    padding: 0.25em 0 0.25em 0.85em;
+    margin: 1.2em 0;
+    font-size: var(--body-text-size);
 
     a {
+        color: var(--accent-color);
         font-weight: 400;
-        font-style: italic;
+        text-decoration: underline 0.08em color-mix(in srgb, var(--accent-color), transparent 50%);
+        text-underline-offset: 0.2em;
+        transition: text-decoration-color 200ms, text-underline-offset 200ms;
+    }
+
+    a:hover {
+        text-decoration-color: var(--accent-color);
+        text-underline-offset: 0.35em;
     }
 }
 
@@ -286,9 +319,125 @@ p.section-link {
 }
 
 #hero img {
-    max-height: 300px;
-    margin-left: 5em;
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 50%;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+p img {
+    max-width: 100%;
+}
+
+.pub-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.6em;
+    margin-bottom: 0.9em;
+}
+
+.pub-btn {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+    font-size: calc(0.65 * var(--body-text-size));
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 0.22em 0.55em;
+    border: 1px solid color-mix(in srgb, var(--text-color), transparent 75%);
+    border-radius: 4px;
+    color: var(--text-color);
+    background-color: color-mix(in srgb, var(--bg-color), black 3%);
+    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.pub-btn:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.pub-actions details.pub-abstract {
+    margin: 0;
+    display: inline;
+}
+
+.pub-actions details.pub-abstract summary {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+    font-size: calc(0.65 * var(--body-text-size));
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.22em 0.55em;
+    border: 1px solid color-mix(in srgb, var(--text-color), transparent 75%);
+    border-radius: 4px;
+    color: var(--accent-color);
+    background-color: color-mix(in srgb, var(--bg-color), black 3%);
+    cursor: pointer;
+    line-height: 1.4;
+    user-select: none;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
+    transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.pub-actions details.pub-abstract summary::-webkit-details-marker {
+    display: none;
+}
+
+.pub-actions details.pub-abstract summary::before {
+    content: "▸";
+    font-size: 0.9em;
+}
+
+.pub-actions details.pub-abstract[open] summary::before {
+    content: "▾";
+}
+
+.pub-actions details.pub-abstract summary:hover {
+    border-color: var(--accent-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+    text-decoration: none;
+}
+
+.pub-actions details.pub-abstract[open] {
+    flex-basis: 100%;
+}
+
+.pub-actions details.pub-abstract[open] blockquote {
+    margin: 0.8em 0 0.5em 0;
+    padding: 0.8em 1.2em;
+    border-left: 3px solid var(--accent-color);
+    background-color: color-mix(in srgb, var(--bg-color), black 2%);
+    border-radius: 0 4px 4px 0;
+    font-size: calc(0.85 * var(--body-text-size));
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.pub-actions details.pub-abstract[open] blockquote p {
+    font-size: inherit;
+    line-height: 1.6;
+    margin: 0.6em 0;
+}
+
+.pub-actions details.pub-abstract[open] blockquote p:first-child {
+    margin-top: 0;
+}
+
+.pub-actions details.pub-abstract[open] blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 details {
@@ -308,10 +457,11 @@ details summary:hover {
 }
 
 details blockquote {
-    margin: 0.5em 0;
-    padding-left: 1em;
-    border-left: 2px solid var(--accent-color);
-    font-size: calc(0.9 * var(--body-text-size));
+    margin: 0.8em 0 0.5em 0;
+    padding-left: 1.2em;
+    border-left: 3px solid var(--accent-color);
+    font-size: calc(0.85 * var(--body-text-size));
+    line-height: 1.6;
     color: var(--text-color);
     text-align: justify;
 }
@@ -331,11 +481,6 @@ footer#links {
     padding: 0 30px 30px;
 }
 
-section#hero {
-    width: 75%;
-    margin-left: auto;
-}
-
 @media screen and (max-width: 1300px) {
     span.title {
         margin-top: 0;
@@ -345,9 +490,13 @@ section#hero {
         display: none;
     }
 
-    header nav,
+    header nav {
+        width: 60%;
+    }
+
     div#hero {
-        width: 80%;
+        width: 75%;
+        gap: 2.5rem;
     }
 
     header {
@@ -360,7 +509,7 @@ section#hero {
 
     main,
     section {
-        width: 60%;
+        width: 75%;
     }
 }
 
@@ -368,6 +517,7 @@ section#hero {
     header {
         flex-direction: column;
         justify-content: center;
+        height: 180px;
     }
 
     header nav {
@@ -375,36 +525,47 @@ section#hero {
     }
 
     span.title {
-        padding-top: 1em;
+        padding-top: 0.5em;
     }
 
     div#hero {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
+        width: 85%;
+        gap: 2rem;
     }
 
     #hero img {
-        margin-left: 0;
+        margin: 0;
+        width: 220px;
+        height: 220px;
         order: 1;
     }
 
     #hero #introduction {
-        margin-left: 0;
+        margin: 0;
         order: 2;
+        width: 100%;
     }
 
     main,
     section {
-        width: 75%;
+        width: 85%;
     }
 }
 
 @media screen and (max-width: 700px) {
-
+    div#hero,
     #hero #introduction,
     section {
         width: 90%;
         margin-top: 1em;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -429,4 +590,14 @@ section#hero {
         margin-bottom: calc(1.2 * var(--body-text-size));
     }
 
+    #hero img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .pub-btn,
+    .pub-actions details.pub-abstract summary {
+        font-size: calc(0.72 * var(--body-text-size));
+        padding: 0.2em 0.5em;
+    }
 }
