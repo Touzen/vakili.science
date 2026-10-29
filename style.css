@@ -12,6 +12,7 @@
 span.title,
 h1,
 h2,
+h3,
 th {
     font-family: 'Merriweather', serif;
 }
@@ -140,6 +141,18 @@ h2 {
     font-size: calc(1.2 * var(--body-text-size));
 }
 
+h3 {
+    font-size: calc(1.05 * var(--body-text-size));
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.2em;
+}
+
+h3 + .course-meta,
+h3 + p {
+    margin-top: 0.15em;
+}
+
 h2.publication-title {
     font-weight: 700;
     margin-top: 1.5em;
@@ -162,7 +175,7 @@ nav ol {
     padding-left: 0;
     display: flex;
     justify-content: flex-end;
-    gap: 3.5rem;
+    gap: 2.8rem;
 }
 
 nav ol li {
