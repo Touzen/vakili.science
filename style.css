@@ -161,7 +161,8 @@ nav ol {
     list-style-type: none;
     padding-left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 3.5rem;
 }
 
 nav ol li {
@@ -274,7 +275,7 @@ header+* {
 }
 
 header nav {
-    width: 50%;
+    width: auto;
 }
 
 div#hero {
@@ -346,12 +347,14 @@ section.dokfest p em {
 }
 
 .poster-container a,
-a:has(> img.poster) {
+a:has(> img.poster),
+a:has(> img[src*="poster"]) {
     display: inline-block;
     text-decoration: none;
 }
 
-img.poster {
+img.poster,
+img[src*="poster"] {
     display: block;
     max-width: 60%;
     width: auto;
@@ -363,12 +366,14 @@ img.poster {
 }
 
 .poster-container a:hover img.poster,
-a:hover img.poster {
+a:hover img.poster,
+a:hover img[src*="poster"] {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
-p:has(img.poster) {
+p:has(img.poster),
+p:has(img[src*="poster"]) {
     text-align: center;
 }
 
@@ -528,10 +533,6 @@ footer#links {
         display: none;
     }
 
-    header nav {
-        width: 60%;
-    }
-
     div#hero {
         width: 75%;
         gap: 2.5rem;
@@ -560,6 +561,11 @@ footer#links {
 
     header nav {
         width: 100%;
+    }
+
+    nav ol {
+        justify-content: space-around;
+        gap: 0;
     }
 
     span.title {
@@ -606,7 +612,8 @@ footer#links {
         -webkit-overflow-scrolling: touch;
     }
 
-    img.poster {
+    img.poster,
+    img[src*="poster"] {
         max-width: 90%;
     }
 }
@@ -637,7 +644,8 @@ footer#links {
         height: 180px;
     }
 
-    img.poster {
+    img.poster,
+    img[src*="poster"] {
         max-width: 100%;
     }
 
