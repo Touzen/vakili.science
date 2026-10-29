@@ -399,12 +399,8 @@ p:has(img[src*="poster"]) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0.5em 0 1.8em;
-    gap: 1.5rem;
-}
-
-.cv-title-bar h1.section-title {
     margin: 0;
+    gap: 1.5rem;
 }
 
 .cv-download-btn {
@@ -419,6 +415,10 @@ p:has(img[src*="poster"]) {
 .cv-download-btn .btn-arrow {
     font-size: 1.1em;
     line-height: 1;
+}
+
+h2.cv-section-title:first-of-type {
+    margin-top: 1.0em;
 }
 
 h2.cv-section-title {
