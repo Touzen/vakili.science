@@ -399,17 +399,12 @@ p:has(img[src*="poster"]) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 5px solid var(--accent-color);
-    padding-bottom: 8px;
     margin: 0.5em 0 1.8em;
     gap: 1.5rem;
 }
 
-.cv-title-bar .cv-main-title {
+.cv-title-bar h1.section-title {
     margin: 0;
-    border-bottom: none;
-    padding-bottom: 0;
-    line-height: 1.15;
 }
 
 .cv-download-btn {
