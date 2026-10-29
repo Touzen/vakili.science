@@ -3,7 +3,9 @@ layout: default
 title: Teaching
 permalink: /teaching/
 ---
-# Teaching
+<section id="teaching">
+    <h1 class="section-title"><span class="section-title">Teaching</span></h1>
+
 Having the opportunity to teach was, and still is a privilege. Indeed, it was an important reason for deciding to pursue a PhD degree. Throughout the years, I have taught many different courses. A selection of these are discussed below.
 
 ## Natural Language --- NLP
@@ -34,7 +36,8 @@ Here is a selection of course material I have created over the years.
 | MAID | Lecture | Machine Learning and Deep Learning| [slides](/documents/slides/maid-deeplearning.pdf) and [recording](https://play.dsv.su.se/multiplayer?p=bc03298d-49d9-40fa-b4b0-90705fa32e27&l=7581) |
 ---
 
-# Supervision
+<h1 class="section-title"><span class="section-title">Supervision</span></h1>
+
 As of 2026, I've supervised 16 master theses and three bachelor theses. These theses have explored a wide range of ML and NLP topics, from gender bias detecting in LLMs, through privacy-preserving methods for NLP, to NLP-based analysis of Polish rap lyrics.
 
 | Year | Title | Student(s) |
@@ -59,3 +62,5 @@ As of 2026, I've supervised 16 master theses and three bachelor theses. These th
 | 2022 | Bias in De-identification Systems | Xiaoman Tang |
 
 Are you a student with a thesis idea? Contact me!
+
+</section>
