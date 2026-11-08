@@ -4,10 +4,10 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/style.css" />
         <link rel="icon" href="/favicon.ico">
-        <title>{% if title %}{{ title }} - Thomas Vakili{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}</title>
+        <title>{% if title %}{{ title }} - Thomas Vakili{% else %}Thomas Vakili - assistant professor at Stockholm University{% endif %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, a researcher and teacher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}" />
-        <meta property="og:title" content="{% if title %}{{ title }}{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}" />
+        <meta name="description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, an assistant professor at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}" />
+        <meta property="og:title" content="{% if title %}{{ title }}{% else %}Thomas Vakili - assistant professor at Stockholm University{% endif %}" />
         <meta property="og:description" content="{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, specializing in privacy-preserving NLP.{% endif %}" />
         <meta property="og:image" content="https://vakili.science/images/thomas.jpg" />
         <meta property="og:type" content="{% if tags and tags contains 'post' %}article{% else %}website{% endif %}" />
@@ -48,8 +48,8 @@
               "givenName": "Thomas",
               "familyName": "Vakili",
               "image": "https://vakili.science/images/thomas.jpg",
-              "description": "Dr. Thomas Vakili is a university teacher and researcher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing.",
-              "jobTitle": "Teacher and Researcher",
+              "description": "Dr. Thomas Vakili is an assistant professor at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing.",
+              "jobTitle": "Assistant Professor",
               "worksFor": {
                 "@type": "CollegeOrUniversity",
                 "@id": "https://www.su.se/#institution",
@@ -100,7 +100,7 @@
               "@id": "https://vakili.science/#website",
               "url": "https://vakili.science",
               "name": "Thomas Vakili",
-              "description": "Personal academic website of Dr. Thomas Vakili, researcher and teacher at Stockholm University.",
+              "description": "Personal academic website of Dr. Thomas Vakili, an assistant professor at Stockholm University.",
               "publisher": {
                 "@id": "https://vakili.science/#person"
               }
@@ -109,8 +109,8 @@
               "@type": "WebPage",
               "@id": "https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}#webpage",
               "url": "https://vakili.science{% if page.url == '/index.html' %}/{% else %}{{ page.url }}{% endif %}",
-              "name": "{% if title %}{{ title }} - Thomas Vakili{% else %}Thomas Vakili - teacher at Stockholm University{% endif %}",
-              "description": "{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, a researcher and teacher at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}",
+              "name": "{% if title %}{{ title }} - Thomas Vakili{% else %}Thomas Vakili - assistant professor at Stockholm University{% endif %}",
+              "description": "{% if description %}{{ description }}{% else %}Personal website of Dr. Thomas Vakili, an assistant professor at Stockholm University specializing in privacy-preserving techniques in Natural Language Processing (NLP).{% endif %}",
               "isPartOf": {
                 "@id": "https://vakili.science/#website"
               },
@@ -133,7 +133,7 @@
                 <span class="title">
                     Thomas Vakili
                 </span>
-                <p id="byline">Teacher at Stockholm University</p>
+                <p id="byline">Assistant Professor at Stockholm University</p>
                 </a>
             </div>
             <nav>
